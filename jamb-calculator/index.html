@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAMB Score Calculator (Learning Project Made by Marvy)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main wrapper for all content -->
+    <div class="container">
+      <!-- Page Title -->
+      <h1>🎓 JAMB Score Calculator</h1>
+
+      <!-- Subtitle / Description -->
+      <p>Enter your subject scores below:</p>
+
+      <!-- Form that collects all the scores -->
+      <form id="score-form">
+        <h2>Let's Calculate</h2>
+
+        <!-- Subject 1 input -->
+        <div class="input-group">
+          <label>Subject 1:</label>
+          <input type="number" name="score" min="0" max="100" required />
+        </div>
+
+        <!-- Subject 2 input -->
+        <div class="input-group">
+          <label>Subject 2:</label>
+          <input type="number" name="score" min="0" max="100" required />
+        </div>
+
+        <!-- Subject 3 input -->
+        <div class="input-group">
+          <label>Subject 3:</label>
+          <input type="number" name="score" min="0" max="100" required />
+        </div>
+
+        <!-- Subject 4 input -->
+        <div class="input-group">
+          <label>Subject 4:</label>
+          <input type="number" name="score" min="0" max="100" required />
+        </div>
+
+        <!-- Subject 5 input -->
+        <div class="input-group">
+          <label>Subject 5:</label>
+          <input type="number" name="score" min="0" max="100" required />
+        </div>
+
+        <!-- Button to trigger calculation -->
+        <button type="submit">Calculate</button>
+      </form>
+
+      <!-- Result display section (hidden by default) -->
+      <div id="results" class="hidden">
+        <h2>Results:</h2>
+        <p><strong>Total Score:</strong> <span id="total"></span></p>
+        <p><strong>Average Score:</strong> <span id="average"></span></p>
+      </div>
+    </div>
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

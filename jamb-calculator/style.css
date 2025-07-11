@@ -1,0 +1,82 @@
+body {
+  margin: 0; /* Remove default browser margin */
+  padding: 0; /* Remove default padding */
+  background-color: gray; /* Light gray background for contrast */
+  font-family: sans-serif; /* Clean modern font */
+}
+.container {
+  width: 80%; /* Use 90% of the screen width */
+  max-width: 85%; /* Don't go beyond 95% even on large screens */
+  margin: 2% auto; /* Centered vertically with top spacing */
+  background-color: lightblue; /* White card */
+  padding: 5%; /* Padding inside container */
+  border-radius: 3%; /* Soft, round corners */
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1); /* Soft shadow for elevation */
+}
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem; /* Scales better than px */
+  margin-bottom: 0.5rem;
+}
+p {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+h2 {
+  color: #1a73e8; /* Calm blue tone */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+/* 🔹 Each input section wrapper (label + input) */
+.input-group {
+  margin-bottom: 1.5rem; /* Space between each subject input */
+}
+/* 🔹 Label text above input */
+.input-group label {
+  display: block; /* Put label on its own line */
+  margin-bottom: 0.4rem; /* Small gap between label and input box */
+  font-weight: 600; /* Slightly bolder text */
+  color: #333; /* Dark gray for readability */
+  font-size: 1rem; /* Scalable font size */
+}
+/* 🔹 Input box where user enters scores */
+input[type="number"] {
+  width: 100%; /* Take full width of parent container */
+  padding: 0.8rem 1rem; /* Inner spacing for comfort */
+  font-size: 1rem; /* Easy-to-read number size */
+  border-radius: 0.5rem; /* Soft rounded corners */
+  border: 1.5px solid #ccc; /* Light gray border */
+  box-sizing: border-box; /* Includes padding inside total width */
+}
+/* 🔹 Calculate button styling */
+button {
+  width: 100%; /* Button stretches across full form */
+  padding: 1rem; /* Taller button for easy tapping on mobile */
+  background-color: #1a73e8; /* Google blue background */
+  color: white; /* White text */
+  font-size: 1.5rem; /* Slightly larger text for importance */
+  border: none; /* Remove default border */
+  border-radius: 0.5rem; /* Rounded corners */
+  cursor: pointer; /* Show hand on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+/* 🔹 Button hover effect */
+button:hover {
+  background-color: #155ab6; /* Slightly darker blue on hover */
+}
+/* 🔹 Result display box (shows after form is submitted) */
+#results {
+  margin-top: 2rem; /* Space between form and results */
+  padding: 1.5rem; /* Space inside the result box */
+  background-color: #e6f0ff; /* Light blue background for clarity */
+  border-radius: 0.75rem; /* Smooth, rounded corners */
+  font-size: 1rem; /* Easy-to-read text */
+  color: #222; /* Slightly darker text for contrast */
+}
+/* 🔹 By default, we want the results to be hidden until the user clicks "Calculate" */
+.hidden {
+  display: none; /* Don’t show the results area until JS makes it visible */
+}
