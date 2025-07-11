@@ -1,0 +1,32 @@
+.navbar {
+  display: flex; /*This is the stuff that makes that navbar become and inline header */
+  justify-content: space-between; /*This will give space between the logo and the list because it won't make sense if the logo and the list are just together */
+  position: fixed; /* This will make the header fixed so it's not that important, only use it when you want to annoy your users so much by letting the header never go no matter how much they scroll */
+  top: 0; /* This will make the header stay at the top of the page */
+  width: 100%; /* This will make the header take up the whole width of the page no matter how long or small your screen is, that's why we used percentage */
+  align-items: center; /* This will make the items in the header align vertically so that the logo and the list will be on the same line */
+  padding: 10px 20px; /* This will give the header some padding so that it doesn't look like it's just stuck to the top of the page and so that all the stuff in the header will show well */
+  background-color: black; /* This will give the header a black background so that it looks like a real header */
+  color: white; /* This will make the text in the header white so that it can be seen well on the black background */
+  z-index: 1000; /* This will make sure that the header is always on top of other elements on the page */
+}
+
+.logo {
+  height: 180px; /* This will give the logo a height of 180px so that it doesn't look too big or too small, though i personally prefer using percentage but i don't know why percentage ain't working */
+}
+
+.nav-links ul {
+  display: flex; /* This will make the list of links in the header become a flexbox so that they can be aligned in a row and not like a normal list */
+  gap: 20px; /* This will give some space between the links so that they don't look too close to each other or even join together */
+  list-style: none; /* This will remove the default list style so that the links don't have bullets or numbers so that it doesn't look like we just put a list in the header, it should seem as if we actually put in the work */
+}
+
+.nav-links a {
+  color: white; /* This will make the links in the header white so that they can be seen well on the black background */
+  text-decoration: none; /* This will remove the underline from the links so that they look more like buttons and not just normal links */
+  font-weight: 500; /* This will make the links a bit bolder so that they can be seen well and not look too light */
+}
+
+.nav-links a:hover {
+  color: greenyellow; /* This will change the color of the links when you hover your mouse over them so that users will know that it is clickable */
+}
