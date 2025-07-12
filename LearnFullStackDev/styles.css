@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header, h1, p, main, section, h2, iframe, h4, footer {
+    margin: 2rem auto 5rem;
+}
+body {
+    background-color: hsl(0, 16%, 91%);
+}
+header {
+    background-color: chocolate;
+    border-color: green;
+    border-width: 1rem;
+    border-style: outset;
+}
+h1, #header-description {
+    text-align: center;
+}
+#javascript {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+#javascript section {
+  flex: 1 1 400px;
+  max-width: 560px;
+}

@@ -1,7 +1,7 @@
-/* Basic Reset */
+/* Basic Reset, this is because every browser has different default style, if you don't reset this, your website will probably look different for users who use a different browser */
 * {
-  margin: 0;  /* This stuff usually removes the default margin of the browser, every browser has a different default, this stuff removes it */
-  padding: 0; /* This stuff usually removes the default padding of the browser, every browser has a different default, this stuff removes it */ 
+  margin: 0;  /* This will remove the default margin of the browser */
+  padding: 0; /* This stuff usually removes the default padding of the browser */ 
   box-sizing: border-box; /* This stuff sets the box-sizing to border-box, which means padding and border are included in the element's total width and height which basically means, if you set a height or width, the browser wouldn't add it's own */
 }
 
