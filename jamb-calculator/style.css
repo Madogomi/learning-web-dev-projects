@@ -43,7 +43,7 @@ h2 {
   font-size: 1rem; /* Scalable font size */
 }
 /* 🔹 Input box where user enters scores */
-input[type="number"] {
+input {
   width: 100%; /* Take full width of parent container */
   padding: 0.8rem 1rem; /* Inner spacing for comfort */
   font-size: 1rem; /* Easy-to-read number size */

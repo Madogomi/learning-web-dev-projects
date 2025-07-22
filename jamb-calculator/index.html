@@ -19,45 +19,55 @@
       <form id="score-form">
         <h2>Let's Calculate</h2>
 
+        <div class="input-group">
+          <label>Name:</label>
+          <input type="text" id="name-of-candidate" required>
+        </div>
+
         <!-- Subject 1 input -->
         <div class="input-group">
           <label>Subject 1:</label>
-          <input type="number" name="score" min="0" max="100" required />
+          <input type="number" id="first" name="score" min="0" max="100" required />
         </div>
 
         <!-- Subject 2 input -->
         <div class="input-group">
           <label>Subject 2:</label>
-          <input type="number" name="score" min="0" max="100" required />
+          <input type="number" id="second" name="score" min="0" max="100" required />
         </div>
 
         <!-- Subject 3 input -->
         <div class="input-group">
           <label>Subject 3:</label>
-          <input type="number" name="score" min="0" max="100" required />
+          <input type="number"id="third" name="score" min="0" max="100" required />
         </div>
 
         <!-- Subject 4 input -->
         <div class="input-group">
           <label>Subject 4:</label>
-          <input type="number" name="score" min="0" max="100" required />
+          <input type="number" id="fourth" name="score" min="0" max="100" required />
         </div>
 
         <!-- Subject 5 input -->
         <div class="input-group">
           <label>Subject 5:</label>
-          <input type="number" name="score" min="0" max="100" required />
+          <input type="number" id="fifth" name="score" min="0" max="100" required />
         </div>
 
+
         <!-- Button to trigger calculation -->
-        <button type="submit">Calculate</button>
+        <button id="submit-button">Calculate</button>
+
+        
       </form>
+      
 
       <!-- Result display section (hidden by default) -->
       <div id="results" class="hidden">
         <h2>Results:</h2>
         <p><strong>Total Score:</strong> <span id="total"></span></p>
         <p><strong>Average Score:</strong> <span id="average"></span></p>
+        <p><strong>Short Note: </strong><span id="short-note"></span></p>
       </div>
     </div>
     <!-- Link to JavaScript file -->
