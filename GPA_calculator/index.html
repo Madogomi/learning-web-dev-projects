@@ -4,25 +4,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is where a short description of your site is told" /><!--This is the description that will show up when someone searches for your website, it will let them know about your website-->
-  <meta name="author" content="Author of your site" />
-  <meta name="keywords" content="Portfolio, Graphic, Developer" /><!--This is so that when people search for 'Porfolio' or 'Graphic' or 'Developer', they will see your website in the list of websites-->
+  <meta name="description" content="A GPA calculator" /><!--This is the description that will show up when someone searches for your website, it will let them know about your website-->
+  <meta name="author" content="Marvelous" />
+  <meta name="keywords" content="GPA, calculator" /><!--This is so that when people search for 'Porfolio' or 'Graphic' or 'Developer', they will see your website in the list of websites-->
 
-  <title><!--The title of the site that will show when searched--></title><!--Th is the title that will show when they search for your website, it will also show at the top of the browser if they are in your website NOTE: It will not show directly in your website-->
+  <title>GPA calculator</title><!--Th is the title that will show when they search for your website, it will also show at the top of the browser if they are in your website NOTE: It will not show directly in your website-->
   <link rel="stylesheet" href="styles.css" /><!--This is where you will link your external CSS file, It doesn't have to be named styles.css-->
 </head>
 <body>
-
-  <header>
-    <!-- Stuff that will be in the heading will come here-->
-  </header>
-
+  <h1>GPA Calculator</h1>
   <main>
-    <!--Stuff that will be in the main part of the site-->
+    <section id="Calculator">
+      <form action="" id="form">
+        <section id="title">
+        <h2 id="title1">Subject</h2>
+        <h2 id="title2">Course Units</h2>
+        <h2 id="title3">Grade Score</h2>
+      </section>
+        <section class="eachSubject">
+          <label for="number1">Course 1: </label>
+          <input max="6" min="1" class="firstnum" type="number" id="number1" required> <input class="inputForScore" placeholder="score" max="100" min="0" type="number" id="grade1" required>
+        </section>
+        <section class="eachSubject">
+          <label for="number2">Course 2: </label>
+          <input max="6" min="1" class="firstnum" type="number" id="number2" required> <input class="inputForScore" placeholder="score" max="100" min="0" type="number" id="grade2" required>
+        </section>
+        <section class="eachSubject">
+          <label for="number3">Course 3: </label>
+          <input max="6" min="1" class="firstnum" type="number" id="number3" required> <input class="inputForScore" placeholder="score" max="100" min="0" type="number" id="grade3" required>
+        </section>
+        <section class="eachSubject">
+          <label for="number4">Course 4: </label>
+          <input max="6" min="1" class="firstnum" type="number" id="number4" required> <input class="inputForScore" placeholder="score" max="100" min="0" type="number" id="grade4" required>
+        </section>
+        <button id="submitbtn" type="submit">Submit</button>
+      </form>
+      <section id="resultSection" class="hidden">
+        <h3>Results</h3>
+        <div id="results"></div>
+      </section>
+    </section>
+    <section id="RandomImage">
+      <img src="https://picsum.photos/200/300" alt="Random image">
+    </section>
   </main>
 
   <footer>
-    <!--Your footer will go here-->
+    <p>You can graciously copy this code</p>
+    <p>I'll just advice you to be careful because i'm not using AI, which means there'll be a lot of mistake</p>
+    <p>I just started this coding thing</p>
+    <p>I'm a bit new to all this</p>
   </footer>
 
   <!--This will connect to his external javascript file, it doesn't have to be named script.js-->

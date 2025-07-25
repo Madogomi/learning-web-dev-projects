@@ -1,0 +1,14 @@
+/* Basic Reset, this is because every browser has different default style, if you don't reset this, your website will probably look different for users who use a different browser */
+* {
+  margin: 0;  /* This will remove the default margin of the browser */
+  padding: 0; /* This stuff usually removes the default padding of the browser */ 
+  box-sizing: border-box; /* This stuff sets the box-sizing to border-box, which means padding and border are included in the element's total width and height which basically means, if you set a height or width, the browser wouldn't add it's own */
+}
+
+body {
+  font-family: sans-serif; /* This stuff sets the font family to sans-serif, which is a generic font family that doesn't have serifs. Just know that it's probably a special handwriting */
+  background-color: #f0f0f0; /* This stuff sets the background color to a light gray */
+  color: black; /* This stuff sets the text color to a black color */
+  padding: 20px; /* This stuff adds padding to the body, which is the space between the content and the border of the element to give it space */
+  line-height: 1.5; /* This stuff sets the line height to 1.5, which is the space between lines of text */
+}

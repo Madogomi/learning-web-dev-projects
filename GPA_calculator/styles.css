@@ -9,6 +9,92 @@ body {
   font-family: sans-serif; /* This stuff sets the font family to sans-serif, which is a generic font family that doesn't have serifs. Just know that it's probably a special handwriting */
   background-color: #f0f0f0; /* This stuff sets the background color to a light gray */
   color: black; /* This stuff sets the text color to a black color */
-  padding: 20px; /* This stuff adds padding to the body, which is the space between the content and the border of the element to give it space */
+   /* This stuff adds padding to the body, which is the space between the content and the border of the element to give it space */
   line-height: 1.5; /* This stuff sets the line height to 1.5, which is the space between lines of text */
+}
+h1 {
+  text-align: center;
+  margin: 3rem;
+}
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#Calculator {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  background-color: gray;
+  margin-left: 2rem;
+}
+#title {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 1rem 0.2rem 0.2rem;
+  border-bottom: black 0.3rem solid;
+}
+#title1 {
+  margin-left: 2.5rem;
+}
+#title3 {
+  margin-left: 1.5rem;
+}
+.eachSubject {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem 3rem;
+  border-bottom: 0.3rem solid black;
+  font-size: larger;
+  font-weight: 900;
+}
+input {
+  padding: 0.15rem;
+}
+.firstnum {
+  width: 4rem;
+}
+.inputForScore {
+  width: 8rem;
+}
+button {
+  width: 95%;
+  background-color: black;
+  color: white;
+  font-size: larger;
+  font-weight: 800;
+  margin: 5rem 1rem 1rem;
+  padding: 1.5rem;
+}
+button:hover {
+  border: blue solid 0.3rem;
+}
+#resultSection {
+  background-color: black;
+  color: white;
+  padding: 5rem;
+}
+.hidden {
+  display: none;
+}
+#RandomImage {
+  width: 47%;
+  height: auto;
+  border: brown solid 0.7rem;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+footer {
+  text-align: center;
+  background-color: #161515;
+  color: white;
+  margin: 4rem 0 0;
+  padding: 1rem;
+}
+footer p {
+  margin: 0.5rem;
 }
