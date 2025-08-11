@@ -14,12 +14,35 @@
 <body>
 
   <header>
-    <h1>Budgt Tracker</h1>
+    <h1>Budget Tracker</h1>
   </header>
 
   <main>
+    <form action="" id="inputField">
+      <legend>Add Budget</legend>
+      <input type="text" name="inputBudget" placeholder="Description" id="budgetDescription" required>
+      <select name="inputBudget" id="budgetType" required>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="number" name="inputBudget" placeholder="Amount" id="budgetAmount" required>
+      <input type="date" name="inputBudget" id="budgetDate" required>
+      <button type="submit" id="budgetButton">Add</button>
+    </form>
+    <section id="total">
+      <h3 id="totalTitle">Total: </h3>
+      <h3 id="totalAmount">0</h3>
+    </section>
+
+
+    <section>
+      <h2><span>Description</span><span>Amount</span><span>Type</span><span>Date</span></h2>
+    </section>
+    <section id="budgetHistory">
+    </section>
   </main>
 
+  <button id="clearBtn">Clear All History</button>
   <footer>
     <p>I'm just trying to create a simple budget tracker</p>
     <p>Wish me luck</p>

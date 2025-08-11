@@ -17,12 +17,14 @@ header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    gap: 3rem;
     top: 0;
     margin: 0;
     width: 100%;
     background-color: #ebe6e6;
     color: black;
     padding: 2rem 2rem;
+    z-index: 100;
 }
 header ul {
     display: flex;
@@ -39,7 +41,10 @@ header ul li a {
 header ul li a:hover {
     background-color: black;
     color: white;
-    padding: 0.5rem 1.3rem;
+    padding: 0.005rem 0.1rem;
+}
+header ul li a:active {
+    background-color: green;
 }
 header i {
     font-size: 2rem;
@@ -53,7 +58,13 @@ header i {
     border-style: outset;
     color: white;
 }
-h1, #header-description {
+.header-description a {
+    color: green;
+}
+#explanation {
+    text-align: center;
+}
+h1, .header-description {
     text-align: center;
 }
 h3 {
@@ -63,19 +74,22 @@ h2, h3 {
     text-align: center;
 }
 #html-and-css {
-    border: 0.5rem black solid;
-    margin: 6rem auto;
-    background-color: white;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 #git-and-github {
-    border: 0.5rem black solid;
-    margin: 6rem auto;
-    background-color: white;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 #javascript {
     border: 0.5rem black solid;
     margin: 6rem auto;
     background-color: white;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 #git-and-github .template-section {
     margin-bottom: 0;
@@ -88,20 +102,26 @@ h2, h3 {
     padding: 0.5rem;
     border: 1rem black solid;
 }
+.codes::selection {
+    background-color: #011d01;
+    color: white;
+}
 #git-and-github .template-section .codes p{
     margin: 0.5rem;
 }
+iframe {
+    max-width: 95%;
+}
 iframe:hover {
-    border: 1rem black solid;
+    border: 0.2rem black solid;
 }
-#javascript {
+.videos {
     display: flex;
+    justify-content: space-around;
     gap: 2rem;
+    text-align: center;
+    padding: 0 0.5rem;
     flex-wrap: wrap;
-}
-#javascript section {
-  flex: 1 1 400px;
-  max-width: 560px;
 }
 #contact-information {
     background-color: black;
@@ -142,13 +162,13 @@ textarea {
     border: 0.3rem solid gray;
 }
 #submit-form:hover {
-    border: 0.15rem solid black;
+    border: 0.05rem solid black;
 }
 input:hover {
-    border: 0.15rem solid black;
+    border: 0.05rem solid black;
 }
 textarea:hover {
-    padding: 0.15rem solid black;
+    padding: 0.05rem solid black;
 }
 footer {
     width: 100%;

@@ -4,21 +4,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is where a short description of your site is told" /><!--This is the description that will show up when someone searches for your website, it will let them know about your website-->
-  <meta name="author" content="Author of your site" />
-  <meta name="keywords" content="Portfolio, Graphic, Developer" /><!--This is so that when people search for 'Porfolio' or 'Graphic' or 'Developer', they will see your website in the list of websites-->
+  <meta name="description" content="This is the main page for all my projects, I will upload all my projects here" /><!--This is the description that will show up when someone searches for your website, it will let them know about your website-->
+  <meta name="author" content="Marvelous" />
+  <meta name="keywords" content="Projects" /><!--This is so that when people search for 'Porfolio' or 'Graphic' or 'Developer', they will see your website in the list of websites-->
 
   <title>All Marvy's Projects</title><!--Th is the title that will show when they search for your website, it will also show at the top of the browser if they are in your website NOTE: It will not show directly in your website-->
   <link rel="stylesheet" href="styles.css" /><!--This is where you will link your external CSS file, It doesn't have to be named styles.css-->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: black;
+      color: white;
+      margin: 0;
+    }
+    h1 {
+      border: 0.3rem solid gold;
+      width: 100%;
+      padding: 1rem 0;
+      margin: 0 0;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 5rem;
+    }
+    li {
+      color: white; 
+      border-radius: 5rem; 
+      margin: 2rem; 
+      background-color: blueviolet; 
+      padding: 0 1rem;
+      padding-top: 5rem; 
+      text-align: center; 
+      padding-bottom: 5rem; 
+      border: 0.15rem solid gold; 
+      list-style-type: none;
+    }
+    a {
+      color: white; 
+      font-weight: bold; 
+      width: 90%; 
+      font-size: larger; 
+      text-decoration: none;
+    }
+    footer {
+      margin: 10rem 0 0;
+      background-color: gray;
+      color: black;
+      border: 0.5rem solid gold;
+      padding: 0.3rem;
+    }
+  </style>
 </head>
 <body>
     <h1>My Projects</h1>
-    <ul style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-items: center; gap: 5rem;">
-        <li style="color: white; margin: 2rem; background-color: blueviolet; width: 90%; padding-top: 5rem; text-align: center; padding-bottom: 5rem; border: 0.15rem solid gold; list-style-type: none;"><a target="_blank" style="color: white; font-weight: bolder; font-size: xx-large; text-decoration: none;" href="LearnFullStackDev/index.html">Learn web development (Incomplete: I have not finished learning web development)</a></li>
-        <li style="color: white; margin: 2rem; background-color: blueviolet; width: 90%; padding-top: 5rem; text-align: center; padding-bottom: 5rem; border: 0.15rem solid gold; list-style-type: none;"><a target="_blank" style="color: white; font-weight: bolder; font-size: xx-large; text-decoration: none;" href="Test_codes/Marvy's_favourite_music.html">This contains all favourite songs (Incomplete: I will constantly add any new music that i find interesting)</a></li>
-        <li style="color: white; margin: 2rem; background-color: blueviolet; width: 90%; padding-top: 5rem; text-align: center; padding-bottom: 5rem; border: 0.15rem solid gold; list-style-type: none;"><a target="_blank" style="color: white; font-weight: bolder; font-size: xx-large; text-decoration: none;" href="jamb-calculator/index.html">Jamb Calculator (Complete: This is complete, though i plan to add a few more functionalities, but for now, it's good enough)</a></li><!--I'll do this so that when people input their JAMB scores, it will not just bring out the result, it will also bring out the schools that will accept them based on the school requirements and so on-->
-        <li style="color: white; margin: 2rem; background-color: blueviolet; width: 90%; padding-top: 5rem; text-align: center; padding-bottom: 5rem; border: 0.15rem solid gold; list-style-type: none;"><a target="_blank" style="color: white; font-weight: bolder; font-size: xx-large; text-decoration: none;" href="GPA_calculator/index.html">GPA Calculator (Complete)</a></li>
-        <li style="color: white; margin: 2rem; background-color: blueviolet; width: 90%; padding-top: 5rem; text-align: center; padding-bottom: 5rem; border: 0.15rem solid gold; list-style-type: none;"><a target="_blank" style="color: white; font-weight: bolder; font-size: xx-large; text-decoration: none;" href="BudgetTracker/index.html">Simple Budget Tracker (Starting)</a></li>
+    <p>This is where i document my projects</p>
+    <ul>
+        <a target="_blank" href="LearnFullStackDev/index.html"><li>Learn full stack web development (Incomplete: I have not finished learning web development)</li></a>
+        <a target="_blank" href="Test_codes/Marvy's_favourite_music.html"><li>This contains all favourite songs (Incomplete: I will constantly add any new music that i find interesting)</li></a>
+        <a target="_blank" href="jamb-calculator/index.html"><li>Jamb Calculator (Semi-Complete: I plan to add a few more functionalities, but for now, it's good enough)</li></a><!--I'll do this so that when people input their JAMB scores, it will not just bring out the result, it will also bring out the schools that will accept them based on the school requirements and so on-->
+        <a target="_blank" href="GPA_calculator/index.html"><li>GPA Calculator (Complete)</li></a>
+        <a target="_blank" href="BudgetTracker/index.html"><li>Simple Budget Tracker (Complete)</li></a>
+        <a target="_blank" href="SimpleNotePad/index.html"><li>Simple NotePad (Incomplete: I'm not that interested in this project, it mostly remains the styling)</li></a>
+        <a target="_blank" href="To_Do_List/index.html"><li>To-Do App (Complete)</li></a>
+        <a target="_blank" href="habitTracker/index.html"><li>Habit Tracker(Starting)</li></a>
+        <a target="_blank" href="SimpleGames/GuessANumber/index.html"><li>The Unbeatable Game of Guess The Number (Complete)</li></a>
+        <a target="_blank" href="SimpleGames/DiceGame/index.html"><li>Unbeatable Dice Game (Complete)</li></a>
     </ul>
+
+    <footer>
+      <p>I mainly built this website because i plan to put all my projects into one GitHub repository and i didn't want to have to look for each of the link and stuff like that for each of the projects.</p>
+      <p>So everytime i build a project and i feel like making it public, I'll put a link that will direct you to the website.</p>
+      <p> Made By Marvelous Madogomi</p>
+    </footer>
 </body>
 </html>

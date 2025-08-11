@@ -4,11 +4,113 @@
   padding: 0; /* This stuff usually removes the default padding of the browser */ 
   box-sizing: border-box; /* This stuff sets the box-sizing to border-box, which means padding and border are included in the element's total width and height which basically means, if you set a height or width, the browser wouldn't add it's own */
 }
-
 body {
   font-family: sans-serif; /* This stuff sets the font family to sans-serif, which is a generic font family that doesn't have serifs. Just know that it's probably a special handwriting */
   background-color: #f0f0f0; /* This stuff sets the background color to a light gray */
   color: black; /* This stuff sets the text color to a black color */
-  padding: 20px; /* This stuff adds padding to the body, which is the space between the content and the border of the element to give it space */
   line-height: 1.5; /* This stuff sets the line height to 1.5, which is the space between lines of text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Title style */
+h1 {
+  margin: 2rem;
+  font-size: xx-large;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+/* Main section style */
+main {
+  background-color: gray;
+  border: 1rem solid gray;
+  position: relative;
+  padding-bottom: 5rem;
+}
+#inputField {
+  border: 0.15rem solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+legend {
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0.1rem;
+    margin-bottom: 0.7rem;
+}
+#inputField input {
+    margin: 0.2rem 0.5rem;
+}
+select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+#budgetButton {
+  padding: 0.7rem 2rem;
+  background-color: #6666f7;
+  border-radius: 1.2rem;
+}
+#total {
+  position: absolute;
+  top: 90%;
+  left: 70%;
+  background-color: gray;
+  color: white;
+  border-radius: 1rem;
+}
+h2 {
+  width: 100%;
+  align-items: center;
+}
+h2 span {
+  text-align: center;
+  border: solid black 0.1rem;
+  padding: 0.2rem;
+}
+#budgetHistory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 40rem;
+}
+.history {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: black;
+}
+.delete {
+  background-color: #9c0a0a;
+  padding: 0.4rem 0.7rem;
+  color: white;
+}
+#clearBtn {
+  width: 40%;
+  color: white;
+  background-color: red;
+  padding: 0.5rem;
+  font-weight: bolder;
+  font-size: medium;
+  margin: 1rem auto;
+}
+
+/* Footer style */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin: 4rem auto 0;
+  padding: 2rem;
+  width: 100%;
 }

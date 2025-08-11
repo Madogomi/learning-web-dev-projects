@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    margin-top: 6rem;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -14,7 +17,7 @@ header {
     width: 100%;
     background-color: hsl(0, 16%, 91%);
     color: black;
-    padding: 2rem 2rem;
+    padding: 0.5rem 2rem;
 }
 header ul {
     display: flex;
@@ -30,10 +33,53 @@ header ul li a {
 }
 header ul li a:hover {
     background-color: blueviolet;
-    padding: 2rem;
-    border: 0.2rem solid green;
+    padding: 0.32rem;
+    border: 0.001rem solid green;
 }
 header i {
     font-size: 2rem;
     color: black;
+}
+#header {
+    background-color: black;
+    color: white;
+    border: gray solid 1rem;
+    text-align: center;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+}
+#header h1 {
+    margin: 1rem;
+}
+#header a {
+    color: rgb(23, 226, 23);
+}
+#header p {
+    margin: 0.5rem auto;
+}
+section {
+    margin: 4rem auto;
+}
+h2 {
+    text-align: center;
+    margin: 1rem auto;
+    border-bottom: solid black 0.2rem;
+}
+p {
+    text-align: center;
+}
+li {
+    border: solid black 0.3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: large;
 }

@@ -1,0 +1,98 @@
+/* Basic Reset, this is because every browser has different default style, if you don't reset this, your website will probably look different for users who use a different browser */
+* {
+  margin: 0;  /* This will remove the default margin of the browser */
+  padding: 0; /* This stuff usually removes the default padding of the browser */ 
+  box-sizing: border-box; /* This stuff sets the box-sizing to border-box, which means padding and border are included in the element's total width and height which basically means, if you set a height or width, the browser wouldn't add it's own */
+}
+
+body {
+  font-family: sans-serif; /* This stuff sets the font family to sans-serif, which is a generic font family that doesn't have serifs. Just know that it's probably a special handwriting */
+  background-color: #f0f0f0; /* This stuff sets the background color to a light gray */
+  color: black; /* This stuff sets the text color to a black color */
+  line-height: 1.5; /* This stuff sets the line height to 1.5, which is the space between lines of text */
+  position: relative;
+  min-height: 100vh;
+}
+h1 {
+    text-align: center;
+}
+main {
+  margin: 2rem auto;
+  width: 100%;
+  padding: 0 0.3rem 3rem;
+  background-color: gray;
+}
+h2 {
+  border: solid 0.15rem black;
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+}
+form {
+  background-color: gray;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+button {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  font-size: large;
+  border-radius: 3rem;
+  margin: 0.5rem auto 0.2rem;
+}
+#newTask {
+  position: absolute;
+  bottom: 1rem;
+  left: 1.5rem;
+}
+.hidden {
+  display: none;
+}
+p {
+  background-color: black;
+  color: white;
+  margin: 0.3rem auto;
+  padding: 0.3rem 0.3rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: large;
+}
+span {
+  position: absolute;
+  right: 0.4rem;
+  background-color: red;
+  color: black;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+div {
+  font-size: x-large;
+  margin-right: 1rem;
+  cursor: pointer;
+  color: white;
+}
+p.complete {
+  text-decoration: line-through;
+  color: hsl(0, 0%, 25%);
+}
+div.complete {
+  color: rgb(12, 236, 12);
+  padding: 0;
+}
