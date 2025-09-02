@@ -26,7 +26,7 @@ btn.addEventListener("click", function(event){
     isNaN(third.valueAsNumber) ||
     isNaN(fourth.valueAsNumber) ||
     isNaN(fifth.valueAsNumber) ||
-    userName.value.length < 3
+    userName.value.length < 1
   ) {
     alert("Please fill in all the correct inputs.");
     return;

@@ -1,0 +1,160 @@
+/* Basic Reset, this is because every browser has different default style, if you don't reset this, your website will probably look different for users who use a different browser */
+* {
+  margin: 0;  /* This will remove the default margin of the browser */
+  padding: 0; /* This stuff usually removes the default padding of the browser */ 
+  box-sizing: border-box; /* This stuff sets the box-sizing to border-box, which means padding and border are included in the element's total width and height which basically means, if you set a height or width, the browser wouldn't add it's own */
+}
+
+body {
+  font-family: sans-serif; /* This stuff sets the font family to sans-serif, which is a generic font family that doesn't have serifs. Just know that it's probably a special handwriting */
+  background-color: #f0f0f0; /* This stuff sets the background color to a light gray */
+  color: black; /* This stuff sets the text color to a black color */
+  padding: 20px; /* This stuff adds padding to the body, which is the space between the content and the border of the element to give it space */
+  line-height: 1.5; /* This stuff sets the line height to 1.5, which is the space between lines of text */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+#calendar {
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    text-align: center;
+    padding: 0.5rem;
+    min-width: 23rem;
+    margin: 2rem auto;
+    min-height: 15rem;
+}
+button {
+    cursor: pointer;
+}
+#previousMonth, #nextMonth {
+    background-color: black;
+    color: white;
+    padding: 0.1rem 0.5rem;
+    font-size: x-large;
+}
+#calendar ul {
+    margin: 0.5rem 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#calendar li {
+    width: calc(100% / 7);
+    list-style: none;
+    color: white;
+    cursor: pointer;
+}
+#daysOfTheWeek li:hover {
+    border-radius: 1rem;
+    background-color: black;
+}
+#daysOfTheWeek .inactive {
+    color: hsl(0, 0%, 40%);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    margin: 2rem 0.4rem;
+}
+input {
+    padding: 0.3rem;
+    margin: 0.7rem 0;
+    width: 95%;
+}
+form button {
+    max-width: 5rem;
+    padding: 0.6rem;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+#habit {
+    margin: 5rem 0;
+    text-align: left;
+    text-align: center;
+    background-color: brown;
+    min-height: 5rem;
+    padding: 1rem 0;
+}
+#newTask {
+    padding: 0.6rem;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 1rem;
+    position: fixed;
+    bottom: 0.6rem;
+    right: 0.5rem;
+    border: solid white 0.15;
+}
+#clear {
+    padding: 0.6rem;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 1rem;
+    border: solid white 0.15;
+}
+#taskSpace {
+    overflow-y: scroll;
+    max-height: 30rem;
+}
+#taskSpace li {
+    background-color: black;
+    color: white;
+    list-style: none;
+    text-align: left;
+    padding: 0 1rem;
+    margin: 0.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    overflow-wrap: anywhere;
+}
+footer {
+    text-align: center;
+    margin: 0 4rem 1rem;
+}
+.hidden {
+    display: none !important;
+}
+#taskSpace li .incomplete {
+    margin-right: 1rem;
+    cursor: pointer;
+    background-color: green;
+    padding: 0 0.3rem;
+    font-size: x-large;
+}
+#taskSpace .complete {
+    color: hsl(0, 0%, 20%);
+    text-decoration: line-through;
+}
+#taskSpace li .delete {
+    padding: 0 0.5rem;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 0.2rem;
+}
+.almostallTaskComplete {
+    background-color: rgb(136, 136, 82);
+}
+.allTaskComplete {
+    background-color: green;
+}
